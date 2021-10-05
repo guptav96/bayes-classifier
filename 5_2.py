@@ -13,7 +13,7 @@ def vary_bins(B):
     for bin_size in B:
         print(f'Bin Size: {bin_size}')
         discretize.discretize('dating.csv', f'dating-binned-{bin_size}.csv', bin_size)
-        split.split(f'dating-binned-{bin_size}.csv', f'trainingSet-{bin_size}.csv', f'testSet-{bin_size}.csv')
+        split.split(f'dating-binned-{bin_size}.csv', f'trainingSet.csv', f'testSet.csv')
         train_accuracy, test_accuracy = nbc.nbc(1)
         train_accuracy_bin.append(train_accuracy)
         test_accuracy_bin.append(test_accuracy)

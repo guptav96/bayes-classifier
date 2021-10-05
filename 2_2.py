@@ -32,6 +32,7 @@ def plot_2_2():
     for idx, attribute in enumerate(rating_of_partner_from_participant):
         x = success_rate[attribute].keys()
         y = success_rate[attribute].values()
+        # print(f'{attribute}: {len(y)}')
         ax[idx] = plt.subplot(2, 3, idx + 1)
         ax[idx].set_ylabel('Success Rate')
         ax[idx].set_xlabel(f'{attribute}')

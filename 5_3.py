@@ -26,6 +26,6 @@ def plot(F, train_data, test_data):
     plt.show()
 
 if __name__ == '__main__':
-    F = [ 0.01,0.1, 0.2, 0.5, 0.6, 0.75, 0.9, 1 ]
+    F = [ 0.01, 0.1, 0.2, 0.5, 0.6, 0.75, 0.9, 1 ]
     train_accuracy_list, test_accuracy_list = solve_5_3(F)
     plot(F, train_accuracy_list, test_accuracy_list)
